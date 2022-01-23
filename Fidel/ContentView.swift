@@ -87,32 +87,6 @@ struct CardListView: View {
     }
 }
 
-struct CardView: View {
-    let card: Card
-    
-    var body: some View {
-        HStack {
-            Image(card.logo)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 45, height: 45)
-
-            VStack(alignment: .leading, spacing: 7) {
-                HStack {
-                    Text(card.owner)
-                    .font(.headline.bold())
-                    Spacer()
-                Text("\(card.numberOfStamps)/\(card.limit) ✅")
-                    .font(.body )
-                }
-                Text("🎁 \(card.reward)")
-                    .font(.body)
-            }
-        }
-    }
-}
-
-
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()

@@ -14,6 +14,7 @@
 		CB8AF954279DC0CC00EE27E8 /* FidelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF953279DC0CC00EE27E8 /* FidelTests.swift */; };
 		CB8AF95E279DC0CC00EE27E8 /* FidelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF95D279DC0CC00EE27E8 /* FidelUITests.swift */; };
 		CB8AF960279DC0CC00EE27E8 /* FidelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF95F279DC0CC00EE27E8 /* FidelUITestsLaunchTests.swift */; };
+		CB8AF971279DF10D00EE27E8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF970279DF10D00EE27E8 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CB8AF959279DC0CC00EE27E8 /* FidelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8AF95D279DC0CC00EE27E8 /* FidelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelUITests.swift; sourceTree = "<group>"; };
 		CB8AF95F279DC0CC00EE27E8 /* FidelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB8AF970279DF10D00EE27E8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CB8AF944279DC0CA00EE27E8 /* ContentView.swift */,
 				CB8AF946279DC0CC00EE27E8 /* Assets.xcassets */,
 				CB8AF948279DC0CC00EE27E8 /* Preview Content */,
+				CB8AF970279DF10D00EE27E8 /* CardView.swift */,
 			);
 			path = Fidel;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8AF945279DC0CA00EE27E8 /* ContentView.swift in Sources */,
+				CB8AF971279DF10D00EE27E8 /* CardView.swift in Sources */,
 				CB8AF943279DC0CA00EE27E8 /* FidelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
