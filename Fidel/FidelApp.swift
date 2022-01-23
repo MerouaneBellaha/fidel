@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FidelApp: App {
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView().environmentObject(appState)
         }
     }
 }
