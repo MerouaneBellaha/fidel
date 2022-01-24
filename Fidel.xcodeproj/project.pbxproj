@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB03F96B279EE685009110D4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F96A279EE685009110D4 /* HomeViewModel.swift */; };
+		CB03F96E279EE70F009110D4 /* QrCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F96D279EE70F009110D4 /* QrCodeService.swift */; };
+		CB03F971279EE73E009110D4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F970279EE73E009110D4 /* User.swift */; };
+		CB03F973279EE751009110D4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F972279EE751009110D4 /* Card.swift */; };
+		CB03F976279EE7FF009110D4 /* UserGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F975279EE7FE009110D4 /* UserGenerator.swift */; };
+		CB03F978279EE80C009110D4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F977279EE80C009110D4 /* AppState.swift */; };
+		CB03F97A279EE83C009110D4 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03F979279EE83C009110D4 /* CardListView.swift */; };
 		CB8AF943279DC0CA00EE27E8 /* FidelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF942279DC0CA00EE27E8 /* FidelApp.swift */; };
-		CB8AF945279DC0CA00EE27E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF944279DC0CA00EE27E8 /* ContentView.swift */; };
+		CB8AF945279DC0CA00EE27E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF944279DC0CA00EE27E8 /* HomeView.swift */; };
 		CB8AF947279DC0CC00EE27E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8AF946279DC0CC00EE27E8 /* Assets.xcassets */; };
 		CB8AF94A279DC0CC00EE27E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8AF949279DC0CC00EE27E8 /* Preview Assets.xcassets */; };
 		CB8AF954279DC0CC00EE27E8 /* FidelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF953279DC0CC00EE27E8 /* FidelTests.swift */; };
@@ -35,9 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB03F96A279EE685009110D4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CB03F96D279EE70F009110D4 /* QrCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeService.swift; sourceTree = "<group>"; };
+		CB03F970279EE73E009110D4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB03F972279EE751009110D4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CB03F975279EE7FE009110D4 /* UserGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGenerator.swift; sourceTree = "<group>"; };
+		CB03F977279EE80C009110D4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CB03F979279EE83C009110D4 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		CB8AF93F279DC0CA00EE27E8 /* Fidel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fidel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8AF942279DC0CA00EE27E8 /* FidelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelApp.swift; sourceTree = "<group>"; };
-		CB8AF944279DC0CA00EE27E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB8AF944279DC0CA00EE27E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CB8AF946279DC0CC00EE27E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB8AF949279DC0CC00EE27E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB8AF94F279DC0CC00EE27E8 /* FidelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +87,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB03F968279EE662009110D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB03F97B279EE84D009110D4 /* SharedComponents */,
+				CB03F969279EE676009110D4 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB03F969279EE676009110D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB8AF944279DC0CA00EE27E8 /* HomeView.swift */,
+				CB03F96A279EE685009110D4 /* HomeViewModel.swift */,
+				CB8AF970279DF10D00EE27E8 /* CardView.swift */,
+				CB03F979279EE83C009110D4 /* CardListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB03F96C279EE6F8009110D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB03F96D279EE70F009110D4 /* QrCodeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB03F96F279EE733009110D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB03F970279EE73E009110D4 /* User.swift */,
+				CB03F972279EE751009110D4 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB03F974279EE7BD009110D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB03F975279EE7FE009110D4 /* UserGenerator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB03F97B279EE84D009110D4 /* SharedComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedComponents;
+			sourceTree = "<group>";
+		};
 		CB8AF936279DC0CA00EE27E8 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +162,14 @@
 		CB8AF941279DC0CA00EE27E8 /* Fidel */ = {
 			isa = PBXGroup;
 			children = (
+				CB03F977279EE80C009110D4 /* AppState.swift */,
 				CB8AF942279DC0CA00EE27E8 /* FidelApp.swift */,
-				CB8AF944279DC0CA00EE27E8 /* ContentView.swift */,
+				CB03F974279EE7BD009110D4 /* Helpers */,
+				CB03F96F279EE733009110D4 /* Models */,
+				CB03F96C279EE6F8009110D4 /* Services */,
+				CB03F968279EE662009110D4 /* Views */,
 				CB8AF946279DC0CC00EE27E8 /* Assets.xcassets */,
 				CB8AF948279DC0CC00EE27E8 /* Preview Content */,
-				CB8AF970279DF10D00EE27E8 /* CardView.swift */,
 			);
 			path = Fidel;
 			sourceTree = "<group>";
@@ -260,9 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8AF945279DC0CA00EE27E8 /* ContentView.swift in Sources */,
+				CB8AF945279DC0CA00EE27E8 /* HomeView.swift in Sources */,
 				CB8AF971279DF10D00EE27E8 /* CardView.swift in Sources */,
+				CB03F97A279EE83C009110D4 /* CardListView.swift in Sources */,
+				CB03F973279EE751009110D4 /* Card.swift in Sources */,
+				CB03F978279EE80C009110D4 /* AppState.swift in Sources */,
+				CB03F971279EE73E009110D4 /* User.swift in Sources */,
+				CB03F976279EE7FF009110D4 /* UserGenerator.swift in Sources */,
 				CB8AF943279DC0CA00EE27E8 /* FidelApp.swift in Sources */,
+				CB03F96B279EE685009110D4 /* HomeViewModel.swift in Sources */,
+				CB03F96E279EE70F009110D4 /* QrCodeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
